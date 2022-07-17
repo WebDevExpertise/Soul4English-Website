@@ -1,0 +1,27 @@
+/** @format */
+
+.card {
+  background-color: var(--color-one);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 0 0.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.why-us .text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-indent: 0;
+}
+
+.why-us h1 {
+  margin-bottom: 2rem;
+}
+
+.why-us h5 {
+  font-weight: normal;
+}

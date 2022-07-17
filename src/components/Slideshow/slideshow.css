@@ -1,0 +1,56 @@
+/** @format */
+
+.slideshow {
+  margin: 3rem 0 1.5rem 0;
+  overflow: hidden;
+  width: 100vw;
+}
+
+.slideshow img {
+  filter: brightness(50%);
+}
+
+.slideshowSlider {
+  display: flex;
+  transition: ease 1000ms;
+}
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px 7px 0px;
+  background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+  transition: background-color 1s;
+  background-color: #2c3ee0;
+}
+
+section[class*="-image"] {
+  position: relative;
+}
+
+.image-text {
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 0.35em;
+  border-radius: 20px;
+  color: white;
+}
+
+.image-text a {
+  color: white;
+  text-decoration: underline;
+}

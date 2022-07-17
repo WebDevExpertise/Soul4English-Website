@@ -1,0 +1,184 @@
+/** @format */
+
+@media (max-width: 1025px) {
+  header,
+  nav {
+    display: flex;
+  }
+
+  header {
+    align-items: center;
+  }
+
+  nav {
+    clip-path: circle(0vh at 95% -12%);
+    -webkit-clip-path: circle(0vh at 95% -12%);
+    margin-top: 100vh;
+    transition: all 0.7s ease-out;
+    z-index: 2;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    font-size: 1.35rem;
+  }
+
+  .opened {
+    display: flex;
+    position: absolute;
+    background-color: var(--color-one);
+    height: 84vh;
+    width: 100vw;
+    margin-top: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(140vh at 95% -12%);
+    -webkit-clip-path: circle(140vh at 95% -12%);
+  }
+
+  .closed {
+    display: flex;
+    position: absolute;
+    background-color: var(--color-one);
+    height: 84vh;
+    width: 100vw;
+    margin-top: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle(0vh at 95% -12%);
+    -webkit-clip-path: circle(0vh at 95% -12%);
+  }
+
+  .slideshow img {
+    width: 100vw;
+    height: 68vh;
+  }
+
+  .image-text {
+    font-size: 1.25rem;
+  }
+
+  .text {
+    font-size: 1.125rem;
+  }
+
+  .why-us h5 {
+    font-size: 1.0625rem;
+  }
+
+  .card {
+    height: 20rem;
+    width: 15rem;
+  }
+
+  .user-icon {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .our-story {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .our-mission {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .founder {
+    width: 18rem;
+    height: 18rem;
+  }
+
+  .content {
+    padding: 3.5em 1.5em;
+  }
+
+  .course-section-description {
+    padding: 0 2.15em;
+  }
+}
+
+@media (min-width: 1025px) {
+  header,
+  nav {
+    display: flex;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+  }
+
+  nav {
+    margin-right: 0.5rem;
+  }
+
+  nav a {
+    font-size: 1.15rem;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .slideshow img {
+    width: 100vw;
+    height: 110vh;
+  }
+
+  .image-text {
+    font-size: 1.5rem;
+    width: 45%;
+  }
+
+  .text {
+    font-size: 1.3rem;
+  }
+
+  .why-us .text {
+    font-size: 1.25rem;
+  }
+
+  .why-us h5 {
+    font-size: 1.15rem;
+  }
+
+  .card {
+    height: 22rem;
+    width: 16.5rem;
+  }
+
+  .user-icon {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .our-story {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .our-mission {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .founder {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .content:not(.content:last-of-type) {
+    padding: 3.5em 4.5em;
+  }
+
+  .course-section-description {
+    padding: 0 calc(4.5em - 7px);
+  }
+}

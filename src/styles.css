@@ -1,26 +1,30 @@
 /** @format */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
+
+:root {
+  --color-one: #b22234;
+  /* --color-one: #d1b000 */
+  --color-two: #0c2641;
+}
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  display: grid;
-  grid-template-rows: 1fr 20vh;
-  min-height: 100vh;
-  position: relative;
+html {
+  scrollbar-width: none;
 }
 
-.content {
-  margin-bottom: 1.5rem;
-  grid-row: 1;
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  /* min-height: 100vh; */
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -30,191 +34,34 @@ a {
 h1 {
   margin: 0;
   font-size: 1.45em;
+  margin-bottom: 0.35rem;
   padding: 10px 15px;
-}
-
-nav {
-  margin-top: 5px;
-}
-
-nav a {
-  padding: 10px 15px;
-  text-transform: uppercase;
-  display: block;
-  color: #34495e;
-  font-size: 1rem;
-}
-
-nav a:hover {
-  color: #718daa;
-}
-
-header {
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  border: 1px solid #a2a2a2;
-  background-color: #f4f4f4;
-  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
-  height: 16vh;
-}
-
-@media (max-width: 1025px) {
-  header,
-  nav {
-    display: flex;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .slideshow img {
-    width: 100vw;
-    height: 68vh;
-  }
-
-  .image-text {
-    font-size: 1.25rem;
-  }
-}
-
-@media (min-width: 1025px) {
-  header,
-  nav {
-    display: flex;
-  }
-
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 12vh;
-  }
-
-  .slideshow img {
-    width: 100vw;
-    height: 110vh;
-  }
-
-  .image-text {
-    font-size: 1.5rem;
-    width: 45%;
-  }
-}
-
-footer {
-  background-color: #292c2f;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-  text-align: center;
-  font: normal 16px sans-serif;
-  padding: 45px 50px;
-  height: 20vh;
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
-  grid-row: 2;
-}
-
-footer p {
-  color: #8f9296;
-  font-size: 14px;
-  margin: 0;
-}
-
-footer a {
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  line-height: 1.8;
-  text-decoration: none;
-  transition: ease 0.25s;
-}
-
-footer a:before {
-  content: "·";
-  font-size: 20px;
-  display: inline-block;
-  padding: 0 5px;
-}
-
-footer .link-1:before {
-  content: "";
-  padding: 0;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-.slideshow {
-  margin-top: 1rem;
-  overflow: hidden;
-  width: 100vw;
-}
-
-.slideshow img {
-  filter: brightness(50%);
-}
-
-.slideshowSlider {
-  display: flex;
-  transition: ease 1000ms;
-}
-
-.slideshowDots {
   text-align: center;
 }
 
-.slideshowDot {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  margin: 15px 7px 0px;
-  background-color: #c4c4c4;
+h1:not(.company-name) {
+  margin-bottom: 1rem;
 }
 
-.slideshowDot.active {
-  transition: background-color 1s;
-  background-color: #2c3ee0;
+.content {
+  scroll-margin-top: 20px;
 }
 
-section[class*="-image"] {
-  position: relative;
+.content:last-of-type {
+  margin-bottom: 2rem;
 }
 
-/* .image-text {
-  font-size: 1.25rem;
-  font-weight: bold;
-  background-color: rgba(0, 0, 0, 0.65);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 0.35em;
-  border-radius: 20px;
-  color: rgba(255, 255, 255, 0.9);
-} */
-
-.image-text {
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 0.35em;
-  border-radius: 20px;
-  color: white;
+.content:nth-of-type(odd) {
+  background-color: var(--color-one);
+  color: rgba(255, 255, 255, 0.85);
 }
 
-.image-text a {
-  color: white;
-  text-decoration: underline;
+.content:nth-of-type(even) {
+  background-color: var(--color-two);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.text {
+  padding: 15px;
+  text-indent: 50px;
 }

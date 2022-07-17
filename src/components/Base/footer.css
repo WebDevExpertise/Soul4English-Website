@@ -1,0 +1,57 @@
+/** @format */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c2641;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  font: normal 16px sans-serif;
+  padding: 45px 50px;
+  height: 20vh;
+  width: 100vw;
+  position: static;
+  bottom: 0;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.email {
+  margin-top: 0.35rem;
+  color: white;
+}
+
+.company {
+  color: rgb(206, 202, 202);
+  margin-top: 0.75rem;
+}
+
+footer a {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  line-height: 1.8;
+  text-decoration: none;
+  transition: ease 0.25s;
+}
+
+footer a:before {
+  content: "·";
+  font-size: 20px;
+  display: inline-block;
+  padding: 0 5px;
+}
+
+footer .link-1:before {
+  content: "";
+  padding: 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

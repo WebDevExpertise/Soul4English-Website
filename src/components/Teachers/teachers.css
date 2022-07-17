@@ -1,0 +1,16 @@
+/** @format */
+
+.teacher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teachers .text {
+  text-indent: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+  padding-top: 0.75em;
+}

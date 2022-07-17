@@ -4,26 +4,21 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles.css";
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Mission from "./components/Mission";
+import "./mediaQueries.css";
+import App from "./components/App";
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />}>
+      <Route path="/" element={<App />}>
         Home
       </Route>
-      <Route path="/about" element={<About />}>
-        About Us
-      </Route>
-      <Route path="/contact" element={<Contact />}>
-        Contact Us
-      </Route>
-      <Route path="/mission" element={<Mission />}>
-        Our Missions
-      </Route>
+      <Route path="/#why-us">Why Us</Route>
+      <Route path="/#story">Our Story</Route>
+      <Route path="/#founder">About Founder</Route>
+      <Route path="/#mission">Our Mission</Route>
+      <Route path="/#teachers">Teachers</Route>
+      <Route path="/#courses">Courses</Route>
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
